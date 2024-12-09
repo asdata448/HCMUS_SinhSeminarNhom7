@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a>ấn vào số ô tròn để hiển thị thông tin</a>
+    </a>
+    <style>
+        /* Scale the image and clickable area by 200% */
+        .scaled-image {
+            /* chỉnh kích thước ảnh không ảnh hướng vị trí nút */
+            transform: scale(2.2); /* Doubles the image size */
+            transform-origin: top left; /* Keeps scaling from the top-left corner */
+        }
+    </style>
+</head>
+<body>
+    <figure">
+        <!-- Apply the scaling class to the image -->
+        <img src="pic.jpg" alt="Phòng lab" usemap="#lab" class="scaled-image">
+        <figcaption>Phòng lab</figcaption>
+        <map name="lab">
+            <!-- nut 1 -->
+            <area shape="rect" coords="94,94,103,103" href="https://en.wikipedia.org/wiki/One_(disambiguation)" alt="Clickable Area">
+            <area shape="rect" coords="126,69,136,78" href="https://en.wikipedia.org/wiki/One_(disambiguation)" alt="Clickable Area">
+        </map>
+    </figure>
+</body>
+</html>
